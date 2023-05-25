@@ -7,12 +7,12 @@ arch=('x86_64')
 url="https://github.com/dk949/$pkgname"
 license=('MIT')
 depends=(
-	'libXss.so'
-	'libX11.so'
-	'libXext.so'
-	'libxcb.so'
-	'libXau.so'
-	'libXdmcp.so'
+    'libX11.so=6'
+    'libXau.so=6'
+    'libXdmcp.so=6'
+    'libXext.so=6'
+    'libXss.so=1'
+    'libxcb.so=1'
 )
 provides=('waitd')
 source=("git+$url")
