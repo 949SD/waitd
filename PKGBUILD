@@ -1,10 +1,11 @@
 # Maintainer: David K david.dk949@gmail.com
-pkgname=waitd
+_pkgname=waitd
+pkgname="${_pkgname}-949sd"
 pkgver="unknown"
 pkgrel=0
 pkgdesc="Run a command after a period of inactivity."
 arch=('x86_64')
-url="https://github.com/dk949/$pkgname"
+url="https://github.com/dk949/$_pkgname"
 license=('MIT')
 depends=(
     'libxss'   # libXss.so
@@ -15,7 +16,7 @@ depends=(
     'libxdmcp' # libXdmcp.so
 )
 provides=('waitd')
-source=("git+$url")
+source=("$pkgname::git+$url")
 md5sums=() #autofill using updpkgsums
 sha256sums=('SKIP')
 
